@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rialo 1337 </title>
+    <title>Build Rialo 1337 Before Your Coffee Cools</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -17,6 +17,9 @@
             background-color: #e8e3d5;
             color: #010101;
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         h1 {
             text-align: center;
@@ -40,6 +43,7 @@
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(1,1,1,0.08);
+            flex: 1;
         }
         .question {
             margin-bottom: 30px;
@@ -203,6 +207,15 @@
             margin: 0;
             font-size: 18px;
         }
+        .footer {
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+            margin-top: auto;
+            padding: 20px 0;
+            border-top: 1px solid #a9ddd3;
+            font-family: 'Inter', sans-serif;
+        }
         @media (max-width: 600px) {
             body {
                 padding: 10px;
@@ -217,7 +230,7 @@
     </style>
 </head>
 <body>
-    <h1>Rialo 1337</h1>
+    <h1>Rialo 1337 Quiz</h1>
     
     <div class="disclaimer">
         This quiz is for fun only!
@@ -424,9 +437,11 @@
             <div id="feedback"></div>
         </div>
     </div>
-<div class="footer">
+
+    <div class="footer">
         Made with ❤️ by Jet
     </div>
+
     <script>
         const questions = {
             q1: { correct: 'C' },
@@ -523,7 +538,7 @@
             submitBtn.textContent = 'Quiz Submitted!';
 
             // Show general feedback
-            feedbackDiv.innerHTML = '<h4>Great job! Keep learning about Rialo 1337. Scroll up to review your answers with indicators.</h4>';
+            feedbackDiv.innerHTML = '<h4>Great job! Keep learning about Rialo 1337. Scroll up to review your answers.</h4>';
             results.style.display = 'block';
 
             // Scroll to the score section
